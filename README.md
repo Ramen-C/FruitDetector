@@ -27,6 +27,7 @@ In the realm of fruit classification and counting, accuracy and efficiency are p
 本项目是基于数字图像处理（DIP）的基础上开发的，图像识别部分仅依赖HSV颜色区分和形态学完成，没有进行深度学习。
 识别水果只有香蕉、苹果、橘子。
 处理如下：
+
 -图像读入与预处理：
 概念：利用数字图像处理技术，将原始RGB图像转换至适合颜色分析的HSV空间，同时对图像进行平滑滤波（如高斯滤波）以降低噪声。
 
