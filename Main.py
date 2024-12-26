@@ -337,7 +337,7 @@ class FruitDetectorGUI:
             },
             "Orange": {
                 "lower": np.array([10, 100, 100]),  # 橙色下限
-                "upper": np.array([20, 255, 255]),  # 橙色上限（调整上限至20，避免与香蕉H=20重叠）
+                "upper": np.array([40, 255, 255]),  # 橙色上限（调整上限至20，避免与香蕉H=20重叠）
             },
         }
 
@@ -496,7 +496,7 @@ class FruitDetectorGUI:
             # 面积和圆形度过滤
             aspect_ratio = max(w / h, h / w)
             if fruit_type == "Banana":
-                if area < 800 or aspect_ratio < 1.8:
+                if area < 800 or aspect_ratio < 1.5:
                     continue
             elif fruit_type == "Apple":
                 if area < 500 or aspect_ratio < 1.0:  # 调整苹果的面积和纵横比
